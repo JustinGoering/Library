@@ -24,6 +24,10 @@ dependencies{
     implementation("com.fasterxml.jackson.core:jackson-databind:2.16.0")
 
     implementation(project(":Common"))
+
+    // https://mvnrepository.com/artifact/org.slf4j/slf4j-simple
+    implementation("org.slf4j:slf4j-simple:2.0.16")
+
 }
 
 tasks.named<JavaExec>("run"){

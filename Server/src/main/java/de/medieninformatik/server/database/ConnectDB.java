@@ -11,8 +11,8 @@ import java.sql.*;
 import java.util.List;
 import java.util.ResourceBundle;
 
-/**
- * @author Justin Göring, m30108
+/*
+  @author Justin Göring, m30108
  * @date 2023-11-29
  * @version 1.0
  * Programmierung 03 Hausarbeit
@@ -173,9 +173,7 @@ public class ConnectDB {
         //Uebergibt "userName" an Setter der "UserNames" Klasse
         userNames.setUserName(userName);
         //Aufruft der "prove()" Methode aus "UserNames" erhalten von Booleanwert
-        boolean isInUse = userNames.prove();
-
-        return isInUse;
+        return userNames.prove();
     }
 
     /**
@@ -242,8 +240,7 @@ public class ConnectDB {
         //Neue "LendBooks" Instanz, uebergabe von "connection" an den Konstruktor
         LendBooks lendBooks = new LendBooks(connection);
         //Erhalten des Ausleihstatus aus "lendBooks()"
-        int lendStatus = lendBooks.lendBook(books);
-        return lendStatus;
+        return lendBooks.lendBook(books);
     }
 
     /**
@@ -257,8 +254,7 @@ public class ConnectDB {
         //Neue Instannz der "RemoveBooks" Klasse und Uebergabe von "connection" an den Konstruktor
         RemoveBooks removeBooks = new RemoveBooks(connection);
         //Erhalten der Antwort, ob das Buch geloescht wurde
-        String answer = removeBooks.remove(isbn);
-        return answer;
+        return removeBooks.remove(isbn);
     }
 
     /**
@@ -271,7 +267,6 @@ public class ConnectDB {
         //Erstellen der "DeleteTables" Instanz und Uebergabe von "statement"
         DeleteTables deleteTables = new DeleteTables(statement);
         //Erhalten der Antwort, ob Loeschung erfolgreich war
-        String answer = deleteTables.deleteTables(del);
-        return answer;
+        return deleteTables.deleteTables(del);
     }
 }
