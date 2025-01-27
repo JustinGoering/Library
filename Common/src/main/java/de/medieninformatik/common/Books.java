@@ -37,6 +37,9 @@ public class Books implements Serializable{
     //Enthält das Datum der Veröffentlichung eines Buches
     @JsonProperty("releaseDate")
     private String releaseDate;
+    /**
+     * TODO: In Datum Format umändern
+     */
     //Rueckgabedatum fuer das ausgeliehene Buch
     @JsonProperty("returnDate")
     private String returnDate;

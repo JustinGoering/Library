@@ -20,6 +20,10 @@ import java.util.List;
  */
 
 /**
+ * TODO: Fehlermeldung zurückgeben, wenn Buch nicht gefunden wurde
+ */
+
+/**
  * Die Klasse dient dem Suchen von Buechern in der Datenbank auf Anfrage der Clients.
  */
 public class SearchBooks {
