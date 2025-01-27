@@ -1,20 +1,18 @@
 package de.medieninformatik.server;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
-import com.fasterxml.jackson.databind.JsonMappingException;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.node.ObjectNode;
 import de.medieninformatik.common.Books;
 import de.medieninformatik.server.database.ConnectDB;
-import de.medieninformatik.server.database.UserNames;
 import jakarta.ws.rs.*;
 import jakarta.ws.rs.core.MediaType;
 import jakarta.ws.rs.core.Response;
 
 import java.util.List;
-/**
- * @author Justin Göring, m30108
+/*
+  @author Justin Göring, m30108
  * @date 2023-11-29
  * @version 1.0
  * Programmierung 03 Hausarbeit

@@ -2,8 +2,8 @@ package de.medieninformatik.server;
 
 import de.medieninformatik.server.database.ConnectDB;
 
-/**
- * @author Justin Göring, m30108
+/*
+  @author Justin Göring, m30108
  * @date 2023-11-29
  * @version 1.0
  * Programmierung 03 Hausarbeit
